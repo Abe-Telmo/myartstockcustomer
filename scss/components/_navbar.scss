@@ -1,0 +1,209 @@
+.navbar {
+    &__container {
+        width: 100%;
+        max-width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__wrap {
+        padding: 20px 30px;
+
+        .container-fluid {
+            padding: 0;
+        }
+
+        .navbar-brand {
+            margin-right: 20px;
+        }
+
+
+
+        .navbar-nav .nav-link,
+        .nav-link {
+            font-family: 'Rubik', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 22px;
+            color: #222222;
+
+            &:hover,
+            &:focus {
+                color: #222222;
+            }
+        }
+
+        .nav-item.dropdown {
+            margin-right: 10px;
+        }
+
+        .dropdown-toggle::after {
+            content: url('/icons/dropdown.svg');
+            border: none;
+            vertical-align: middle;
+            margin-left: 4px;
+        }
+
+        .dropdown-menu {
+            background: #FFFFFF;
+            border: none;
+            padding: 0;
+            margin-top: 20px;
+            border-radius: 6px;
+            // min-width: 275px;
+        }
+
+        .dropdown-item {
+            padding: 12px 18px;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 21px;
+            color: #222222;
+
+            &:hover {
+                color: #16181b;
+                text-decoration: none;
+                background-color: rgba(#FFF4F4, 0.5);
+            }
+        }
+
+        &-right {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-left: auto;
+
+            .nav-item {
+                margin-right: 30px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        &-pricing {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-left: auto;
+            width: fit-content;
+            padding-top: 10px;
+            padding-right: 30px;
+
+            .nav-link {
+                margin-right: 20px;
+            }
+        }
+    }
+
+    &__cart {
+        fill: none;
+        stroke: #222222;
+        width: 24px;
+        height: 24px;
+    }
+
+    &__login {
+        border: 0.5px solid #222222;
+        box-sizing: border-box;
+        border-radius: 20px;
+        padding: 14px 21px;
+        background-color: transparent;
+        font-family: 'Rubik', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        color: #222222;
+
+        &:focus {
+            outline: none;
+        }
+
+        &-link {
+            margin-right: 20px;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+
+    &__signup {
+        border: none;
+        box-sizing: border-box;
+        border-radius: 20px;
+        padding: 14px 21px;
+        background-color: #222222;
+        font-family: 'Rubik', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        color: #fff;
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+@media screen and (max-width:1038px) {
+    .navbar__login-link {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .navbar__wrap .nav-item.dropdown {
+        margin-bottom: 10px;
+    }
+
+    .navbar__wrap .dropdown-menu {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .navbar__wrap {
+        .navbar-brand {
+            img {
+                width: 150px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:500px) {
+    .navbar__wrap {
+        padding: 20px;
+        padding-top: 10px;
+
+        .navbar-brand {
+            img {
+                width: 100px;
+            }
+        }
+    }
+
+}
+
+@media all and (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu {
+        display: none;
+    }
+
+    .navbar .nav-item:hover .nav-link {
+        color: #222222;
+    }
+
+    .navbar .nav-item:hover .dropdown-menu {
+        display: block;
+    }
+
+    .navbar .nav-item .dropdown-menu {
+        margin-top: 0;
+    }
+}

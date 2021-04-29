@@ -14,6 +14,7 @@
   &__account ul li:nth-child(1):hover {
     background-color: #efecff;
   }
+
   &__userProfile {
     max-width: 100%;
 
@@ -46,6 +47,7 @@
 
   &__form-group {
     position: relative;
+
     .span-text {
       position: absolute;
       left: 90%;
@@ -79,10 +81,12 @@
       font-weight: 500;
       padding-bottom: 15px;
     }
+
     .custom-control-right {
       padding-right: 24px;
       padding-left: 0;
       margin-left: 0;
+      z-index: 0;
       margin-right: 0;
     }
 
@@ -94,6 +98,7 @@
       width: 9px;
       height: 9px;
     }
+
     .custom-control-right .custom-control-label::before {
       right: -82.5rem;
       left: auto;
@@ -103,17 +108,17 @@
       background-color: #fff;
     }
 
-    .custom-control-input:focus ~ .custom-control-label::before {
+    .custom-control-input:focus~.custom-control-label::before {
       border-color: #c4c4c4 !important;
       box-shadow: 1rem 1rem 0 0rem rgba(0, 0, 0, 0) !important;
     }
 
-    .custom-control-input:checked ~ .custom-control-label::before {
+    .custom-control-input:checked~.custom-control-label::before {
       border-color: #3048b5 !important;
       background-color: #3048b5 !important;
     }
 
-    .custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
+    .custom-control-input:focus:not(:checked)~.custom-control-label::before {
       border-color: #c4c4c4 !important;
     }
 
@@ -176,7 +181,7 @@
     padding-top: 50px;
 
     .blue-btn {
-      background-color: #3048b5 !important ;
+      background-color: #3048b5 !important;
     }
 
     .modal-content {
@@ -197,6 +202,7 @@
     .custom-control-right .custom-control-label::after {
       right: -49.5rem;
     }
+
     .custom-control-right .custom-control-label::before {
       right: -50.5rem;
     }
@@ -204,6 +210,7 @@
 
   .profile__form-group {
     position: relative;
+
     .span-text {
       font-size: 14px;
     }
@@ -233,6 +240,7 @@
   .custom-control-right .custom-control-label::after {
     right: -42.5rem !important;
   }
+
   .custom-control-right .custom-control-label::before {
     right: -43.5rem !important;
   }
@@ -283,6 +291,7 @@
   .custom-control-right .custom-control-label::after {
     right: -36.5rem !important;
   }
+
   .custom-control-right .custom-control-label::before {
     right: -37.5rem !important;
   }
@@ -302,6 +311,7 @@
   .custom-control-right .custom-control-label::after {
     right: -24.5rem !important;
   }
+
   .custom-control-right .custom-control-label::before {
     right: -25.5rem !important;
   }
@@ -313,9 +323,11 @@
       font-size: 12px;
     }
   }
+
   .custom-control-right .custom-control-label::after {
     right: -20.5rem !important;
   }
+
   .custom-control-right .custom-control-label::before {
     right: -21.5rem !important;
   }

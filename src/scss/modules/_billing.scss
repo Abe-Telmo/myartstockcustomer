@@ -1,41 +1,10 @@
 .billing {
-  &__wrap {
-    width: 100%;
-    max-width: 1050px;
-    margin-left: 300px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-
-  &__account ul li:nth-child(2) {
+  ul li:nth-child(2) {
     background: #efecff;
     z-index: 100;
   }
-  &__account ul li:nth-child(2):hover {
+  ul li:nth-child(2):hover {
     background-color: #efecff;
-  }
-
-  &__userbilling {
-    max-width: 100%;
-  }
-
-  &__flex-profile {
-    .arrow-back {
-      display: none;
-    }
-  }
-  &__title {
-    color: #142367;
-    font-size: 28px;
-    font-weight: 700;
-    padding: 20px 0;
-  }
-
-  &__subtitle {
-    padding-bottom: 20px;
-    font-weight: 500;
-    font-size: 18px;
-    padding: 10px 0 30px 0px;
   }
 
   &__content {
@@ -53,7 +22,7 @@
     display: flex;
     justify-content: flex-start;
 
-    p {
+    a {
       color: #3048b5;
     }
   }
@@ -106,55 +75,38 @@
   }
 }
 
-@media screen and (max-width: 1038px) {
-  .billing__wrap {
-    max-width: 68%;
-    padding: 0px 10px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .billing__wrap {
-    max-width: 90%;
-    margin-left: 20px;
-    margin-top: 180px;
-    margin-bottom: 50px;
+@media screen and (max-width: 300px) {
+  .billing__content {
+    height: 400px;
   }
 
-  .billing__userbilling {
-    margin-left: 100px;
-  }
-}
-
-@media screen and (max-width: 550px) {
-  .billing__wrap {
-    max-width: 100vw;
-    margin-left: 0;
-    margin-top: 30px;
-    padding: 0px 10px;
-
-    .account__container {
-      display: none;
-    }
+  .billing__default {
+    padding: 0 10px;
+    font-size: 14px;
   }
 
-  .billing__userbilling {
-    margin-left: 10px;
-  }
-
-  .billing__flex-profile {
-    display: flex;
+  .billing__card {
+    padding:15px 10px;
+    height: 300px;
     justify-content: start;
-    align-items: center;
 
-    .arrow-back {
-      display: block;
-      padding-right: 20px;
+    div {
+      margin-bottom: 15px;
     }
 
-    .arrow-back .fa-arrow-left {
-      color: #142367;
-      font-size: 24px;
+    span {
+      font-size: 20px;
     }
+
+    p {
+      margin-bottom: 15px;
+      font-size: 14px;
+    }
+  }
+
+  .billing__edit {
+    bottom: -5%;
+    right: 10%;
+    font-size: 12px;
   }
 }

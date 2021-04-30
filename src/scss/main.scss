@@ -14,14 +14,14 @@
 
 @import "components/breadcrumb.scss";
 @import "components/form.scss";
+@import "components/general.scss";
 
 
 /*MODULES*/
 @import "modules/login.scss";
 @import "modules/profile.scss";
 @import "modules/plan-state.scss";
-@import "modules/password.scss";
-@import "modules/email.scss";
+@import "modules/edit.scss";
 @import "modules/billing.scss";
 @import "modules/purchase.scss";
 @import "modules/recent.scss";

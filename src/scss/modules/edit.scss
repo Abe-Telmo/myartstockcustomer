@@ -1,4 +1,4 @@
-.email {
+.edit {
   &__wrap {
     display: flex;
     position: relative;
@@ -80,23 +80,41 @@
 }
 
 @media screen and (max-width: 768px) {
-  .login__img {
+  .edit__img {
     display: none;
   }
 
-  .login__form-wrap {
+  .edit__form-wrap {
     padding: 0 20px;
   }
 }
 
 @media screen and (max-width: 550px) {
-  .login__form-content {
-    width: 100%;
+  .edit__btn-div {
+   display: block;
   }
 
-  .login__logo {
-    left: 20px;
-    top: 30px;
+    .edit__btn{
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .edit__form {
+    margin: 120px auto;
+  }
+  
+  .edit__logo {
+    left: 40px;
+    top: 40px;
     width: 120px;
   }
+
 }
+
+@media screen and (max-width: 412px) {
+.edit__logo {
+    left: 20px;
+  }
+ 
+}
+

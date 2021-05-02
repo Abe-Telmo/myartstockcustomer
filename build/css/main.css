@@ -545,7 +545,11 @@ body {
   z-index: 1;
   color: white;
   text-align: center;
-  -webkit-backface-visibility: hidden; }
+  -webkit-backface-visibility: hidden;
+  width: 100%;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto; }
 
 .navbar__container::before, .navbar__container::after {
   content: '';
@@ -922,7 +926,10 @@ body {
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto; }
   .general__wrap .hidden {
     display: none; }
 

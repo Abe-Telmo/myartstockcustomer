@@ -63,12 +63,12 @@ async function clean(cb) {
 }
 
 function html(cb) {
-  src(`${origin}/*.html`).pipe(dest(`${destination}`))
+  src(`${origin}/**/*.html`).pipe(dest(`${destination}`))
   cb()
 }
 
 function php(cb) {
-  src(`${origin}/*.php`).pipe(dest(`${destination}`))
+  src(`${origin}/**/*.php`).pipe(dest(`${destination}`))
   cb()
 }
 

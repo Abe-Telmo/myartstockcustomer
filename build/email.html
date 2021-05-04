@@ -15,28 +15,51 @@
 </head>
 
 <body>
-    <div class="edit__wrap">
-        <img src="/image/logo.svg" alt="logo" class="edit__logo img-fluid">
+    <div class="general__wrap email">
+        <div class="account__container fixed-top side-bar">
+          <img src="/image/logo.svg" alt="logo" class="general__logo img-fluid" />
+    <p class="account__title">Account settings</p>
+    <ul class="account__lists">
+        <li class="list-item active">
+            <a href="profile.html">
+                <span class="list-title">Edit Profile</span>
+            </a>
+        </li>
+        <li class="list-item ">
+            <a href="email.html">
+                <span class="list-title">Email settings</span>
+            </a>
+        </li>
+        <li class="list-item">
+             <a href="password.html">
+                <span class="list-title">Change password</span>
+            </a>
+        </li>
+        <li class="list-item">
+             <a href="purchase.html">
+                <span class="list-title">Payment details</span>
+            </a>
+        </li>
+        <li class="list-item">
+             <a href="deactivate.html">
+                <span class="list-title">Deactivate account</span>
+            </a>
+        </li>
+    </ul>
+</div>
 
-        <div class="edit__form">
-                <form action="profile.html" class="edit__form-content">
-                    <p class="edit__subtitle">Edit Email</p>
+        <div class="general__usergeneral">
+                <form action="profile.html">
+                    <p class="general__title">Email settings</p>
                     <div class="form-group">
-                        <label for="" class="edit__label">Current email</label>
-                        <input type="email" class="edit__input form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="" class="edit__label">New email</label>
-                        <input type="password" class="edit__input form-control">
+                        <label for="" class="profile__label">Current email</label>
+                        <input type="email" class="profile__input form-control">
                     </div>
                     <div class="form-group">
-                        <label for="" class="edit__label">Confirm email</label>
-                        <input type="password" class="edit__input form-control">
+                        <label for="" class="profile__label">New email</label>
+                        <input type="password" class="profile__input form-control">
                     </div>
-                    <div class="edit__btn-div">
-                    <button type="submit" class="edit__btn edit__white">Cancel</button>
-                     <button type="submit" class="edit__btn">Change email</button>
-                    </div>
+                    <button type="submit" class="general__btn">Save changes</button>
 
                 </form>
             </div>

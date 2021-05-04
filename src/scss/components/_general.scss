@@ -1,10 +1,18 @@
 .general {
+  &__logo {
+    margin-bottom: 30px;
+    margin-left: 20px;
+  }
+
   &__wrap {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
+    margin-top: 150px;
     margin-bottom: 50px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 
     .hidden {
       display: none;
@@ -13,17 +21,25 @@
 
   &__usergeneral {
     flex: 1;
-    width: 1366px;
     padding-right: 50px;
     padding-left: 300px;
+  }
 
-    .arrow-back {
-      display: none;
+  &__flex-general {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    img {
+      object-fit: cover;
+      max-width: 100%;
+      margin-right: 30px;
     }
 
-    .arrow-back .fa-arrow-left {
-      color: #142367;
-      font-size: 24px;
+    a {
+      color: #3048b5;
+      font-size: 14px;
+      font-weight: 500;
     }
   }
 
@@ -38,6 +54,20 @@
     padding-bottom: 20px;
     font-weight: 500;
     font-size: 18px;
+  }
+
+  &__btn {
+    height: 50px;
+    width: 213px;
+    border-radius: 5px;
+    background: #3048b5;
+    border: none;
+    height: 60px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 25px;
+    color: #ffffff;
+    margin-top: 20px;
   }
 }
 
@@ -70,28 +100,17 @@
   .general__usergeneral {
     padding: 0 20px;
   }
-
-  .general__flex-general {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-
-    .arrow-back {
-      display: block;
-      padding-right: 20px;
-    }
-  }
 }
 
-@media screen and (max-width: 350px){
+@media screen and (max-width: 350px) {
   .general__wrap {
     margin-top: 10px;
   }
 
-   .general__usergeneral {
+  .general__usergeneral {
     padding: 0 10px;
   }
- .general__title {
+  .general__title {
     color: #142367;
     font-size: 20px;
     font-weight: 700;

@@ -1,4 +1,4 @@
-.purchase {
+.payment {
   ul li:nth-child(4) {
     background: #efecff;
   }
@@ -34,6 +34,12 @@
     .table tbody tr:hover th {
       background-color: #fff !important;
     }
+
+     .table-head {
+      text-align: left !important;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
   }
 }
 
@@ -45,9 +51,6 @@
       font-size: 16px !important;
     }
 
-    .table-head {
-      text-align: left !important;
-    }
   }
 }
 @media screen and (max-width: 550px) {

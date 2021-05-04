@@ -8,30 +8,13 @@
     background-color: #efecff;
   }
   
-
-  &__form-content {
-    padding: 40px 50px;
-  }
-
-  &__form-group {
-    position: relative;
-
-    .span-text {
-      position: absolute;
-      left: 90%;
-      top: 50%;
-      transform: translateY(50%);
-      color: #3048b5;
-    }
-  }
-
   &__label {
     font-size: 16px;
     padding-bottom: 10px;
   }
 
   &__input {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     padding: 20px;
     width: 100%;
   }

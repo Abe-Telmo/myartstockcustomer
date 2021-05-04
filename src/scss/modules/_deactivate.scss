@@ -1,0 +1,24 @@
+.deactivate {
+    .warning{
+        color: #E51954;
+    }
+  &__colored-div {
+    background-color: rgba(239, 236, 255, 0.6);
+    padding: 30px;
+    margin-top: 60px;
+
+    p {
+      font-size: 14px;
+    }
+
+    .deactivate-name {
+      font-weight: 500;
+      line-height: 27px;
+    }
+
+    .deactivate-text {
+      height: 44px;
+      line-height: 25px;
+    }
+  }
+}

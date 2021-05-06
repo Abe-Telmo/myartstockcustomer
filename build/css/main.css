@@ -1136,18 +1136,22 @@ body {
   position: relative; }
   .profile__profile-pic p {
     color: #3048b5;
-    margin-left: 30px; }
+    margin-left: 30px;
+    cursor: pointer; }
   .profile__profile-pic img {
     width: 50px; }
   .profile__profile-pic .form-file {
     position: absolute;
-    left: 35%;
+    left: 30%;
     opacity: 0;
     top: 0;
     height: fit-content;
     bottom: 0;
     margin-top: auto;
-    margin-bottom: auto; }
+    margin-bottom: auto;
+    cursor: pointer; }
+    .profile__profile-pic .form-file input {
+      cursor: pointer; }
 
 .profile__form-content {
   padding: 40px 50px; }

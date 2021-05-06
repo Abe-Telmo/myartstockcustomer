@@ -23,20 +23,27 @@
     p {
       color: #3048b5;
       margin-left: 30px;
+      cursor: pointer;
     }
 
     img {
       width: 50px;
     }
+
     .form-file {
       position: absolute;
-      left: 35%;
+      left: 30%;
       opacity: 0;
       top: 0;
       height: fit-content;
       bottom: 0;
       margin-top: auto;
       margin-bottom: auto;
+      cursor: pointer;
+
+      input {
+        cursor: pointer;
+      }
     }
   }
 
@@ -114,17 +121,17 @@
       background-color: #fff;
     }
 
-    .custom-control-input:focus ~ .custom-control-label::before {
+    .custom-control-input:focus~.custom-control-label::before {
       border-color: #c4c4c4 !important;
       box-shadow: 1rem 1rem 0 0rem rgba(0, 0, 0, 0) !important;
     }
 
-    .custom-control-input:checked ~ .custom-control-label::before {
+    .custom-control-input:checked~.custom-control-label::before {
       border-color: #3048b5 !important;
       background-color: #3048b5 !important;
     }
 
-    .custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
+    .custom-control-input:focus:not(:checked)~.custom-control-label::before {
       border-color: #c4c4c4 !important;
     }
 
@@ -279,6 +286,7 @@
     }
   }
 }
+
 @media screen and (max-width: 376px) {
   .profile__form-group {
     .span-text {

@@ -1,4 +1,12 @@
 .deactivate {
+
+     ul li:nth-child(5) {
+    background: #efecff;
+  }
+
+   ul li:nth-child(5):hover {
+    background-color: #efecff;
+  }
     .warning{
         color: #E51954;
     }

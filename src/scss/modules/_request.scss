@@ -44,24 +44,16 @@
       font-weight: 500;
       line-height: 28px;
       color: #3048b5;
+      margin-bottom: 30px;
     }
 
    
-    .modal-body {
-      height: 222px;
-      width: 318px;
-      background: #fff;
-      box-shadow: 0px 4px 8px rgba(9, 12, 25, 0.3);
-      border-radius: 8px;
-      margin: 30px auto;
-      align-items: center;
-      text-align: center;
-    }
-
+   
     .modal-footer {
       display: flex;
       justify-content: center;
       align-items: center;
+      margin-top: 30px;
 
       button {
         font-size: 14px;
@@ -69,6 +61,18 @@
       }
     }
   }
+
+   &__modal-body {
+      height: 222px;
+      width: 318px;
+      background: #fff;
+      box-shadow: 0px 4px 8px rgba(9, 12, 25, 0.3);
+      border-radius: 8px;
+      margin: auto;
+      align-items: center;
+      text-align: center;
+    }
+
 
   &__close{
         position: absolute;

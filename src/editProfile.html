@@ -27,11 +27,13 @@
   </head>
 
   <body>
-   
-    <div class="general__wrap profile">
-        <div class="account__container fixed-top side-bar">
-          <img src="/image/logo.svg" alt="logo" class="general__logo img-fluid" />
-
+   <header class="p-5 fixed-top">
+      <a class="navbar-brand" href="index.html">
+        <img src="/image/logo.svg" alt="logo" class="img-fluid" />
+      </a>
+    </header>
+    <div class="general__wrap profile ">
+        <div class="account__container fixed-top side-bar ">
     <p class="account__title">Account settings</p>
     <ul class="account__lists">
         <li class="list-item active">
@@ -65,10 +67,10 @@
       <div class="general__usergeneral">
         <div class="general__flex-general mb-5">
            <img src="image/profile.png" alt="">
-           <a href="">Change profile picture</a>
+           <a href="uploadImg.html">Change profile picture</a>
         </div>
        
-      <form>
+      <form action="profileState.html">
   <div class="form-group">
     <label for="exampleInputEmail1" class="profile__label">Full name</label>
     <input type="text" class="form-control profile__input" id="exampleInputText1">

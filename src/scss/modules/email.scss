@@ -1,10 +1,10 @@
 .email{
 
-  ul li:nth-child(2) {
+  .active {
     background: #efecff;
   }
 
-   ul li:nth-child(2):hover {
+  .active:hover {
     background-color: #efecff;
   }
 

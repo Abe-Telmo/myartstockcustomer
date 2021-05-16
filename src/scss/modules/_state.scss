@@ -4,11 +4,11 @@
   }
   &__wrap {
     max-width: 100%;
-    
-    .btn-hidden{
+
+    .btn-hidden {
       display: none;
     }
-    
+
     .left-btn {
       padding: 0 50px;
       display: flex;
@@ -33,9 +33,9 @@
     flex-wrap: wrap;
   }
 
-   &__flexed-container > div{
-     margin: 15px;
-   }
+  &__flexed-container > div {
+    margin: 15px;
+  }
 
   &__content {
     max-width: 413px;
@@ -79,7 +79,7 @@
 
   &__tags {
     margin-top: 10px;
-    
+
     .tag-btn {
       background: #f7f7f7;
       color: #a0a3b3;
@@ -127,39 +127,36 @@
     flex-direction: column;
   }
 
-   &__image.hidden{
-     display: none;
-   }
+  &__image.hidden {
+    display: none;
+  }
   &__image img {
     margin-bottom: 10px;
   }
 }
 
-@media screen and (max-width:541px){
-   .state__wrap {
+@media screen and (max-width: 541px) {
+  .state__wrap {
     max-width: 100%;
 
-    .btn-active{
+    .btn-active {
       display: none;
     }
 
-    .btn-hidden{
-      display: block;
-
+    .btn-hidden {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
     }
 
-     .left-btn {
-      padding: 0 50px;
-      display: flex;
-      justify-content:center;
-      margin-bottom: 20px;
+    .left-btn {
+      display: none;
     }
   }
 }
 
-@media screen and (max-width:376px){
-  .state__content{
-
+@media screen and (max-width: 376px) {
+  .state__content {
     .content-interest {
       font-size: 16px;
       font-weight: 500;
@@ -167,7 +164,7 @@
       margin-top: 40px;
     }
   }
-   .state__mid-content {
+  .state__mid-content {
     justify-content: space-between;
     padding: 0 15px;
 
@@ -175,6 +172,5 @@
       font-size: 14px;
       padding: 0px 0px;
     }
-
   }
 }

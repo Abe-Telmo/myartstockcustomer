@@ -27,7 +27,7 @@
   </head>
 
   <body>
-    <header class="p-5 fixed-top">
+    <header class="state__header">
       <a class="navbar-brand" href="index.html">
         <img src="/image/logo.svg" alt="logo" class="img-fluid" />
       </a>
@@ -65,11 +65,18 @@
       </div>
 
       <div class="general__usergeneral">
-        <p class="general__title">Deactivate account</p>
+        <div class="general__flex-general ">
+          <a href="sidebar.html" class="arrow-back "
+            ><i class="fas fa-arrow-left"></i
+          ></a>
+          <p class="general__title">Deactivate account</p>
+        </div>
+        
         <small
           ><span class="warning">Warning: </span> Deactivating your account deteletes all your
           uploads, collections and stats</small
         >
+        <form action="index.html">
         <div class="form-group mt-5">
           <label for="exampleInputText1" class="profile__label "
             >Enter password</label
@@ -81,6 +88,7 @@
           />
         </div>
         <button type="submit" class="general__btn">Deactivate account</button>
+        </form>
         <div class="deactivate__colored-div">
             <p class="deactivate-name">Deleting Contents</p>
             <p class="deactivate-text">Deactivating your account removes all your content from MyArtStock. However, the MyArtStock license is irrevocable, so copies of contents that were downloaded before deactivation may still be used.</p>

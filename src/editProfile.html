@@ -27,7 +27,7 @@
   </head>
 
   <body>
-   <header class="p-5 fixed-top">
+   <header class="state__header">
       <a class="navbar-brand" href="index.html">
         <img src="/image/logo.svg" alt="logo" class="img-fluid" />
       </a>
@@ -65,15 +65,20 @@
 </div>
       
       <div class="general__usergeneral">
-        <div class="upload__upload-flex mb-5">
+        <div class="general__flex-general ">
+        <a href="sidebar.html" class="arrow-back "
+            ><i class="fas fa-arrow-left"></i
+          ></a>
+        <div class="upload__upload-flex ">
            <img src="image/profile.png" alt="">
            <div class="request__upload">
           <input type="file" id="files" class="hidden" />
           <label for="files">Change profile picture</label>
         </div>
         </div>
+        </div>
        
-      <form action="profileState.html">
+      <form action="profileState.html" class="mt-5">
   <div class="form-group">
     <label for="exampleInputEmail1" class="profile__label">Full name</label>
     <input type="text" class="form-control profile__input" id="exampleInputText1">

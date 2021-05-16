@@ -26,6 +26,7 @@
   }
 
   &__flex-general {
+    margin-top: 0px;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -40,6 +41,13 @@
       color: #3048b5;
       font-size: 14px;
       font-weight: 500;
+    }
+
+     .arrow-back {
+      display: block;
+      padding-right: 20px;
+      font-size: 20px;
+       color: #142367;
     }
   }
 
@@ -82,21 +90,23 @@
 
 @media screen and (max-width: 768px) {
   .general__wrap {
-    margin-top: 150px;
+    margin-top: 50px;
+
+      .side-bar{
+      display: none;
+    }
   }
   .general__usergeneral {
     width: 100%;
     padding-right: 50px;
-    padding-left: 120px;
+    padding-left: 50px;
   }
 }
 
 @media screen and (max-width: 550px) {
   .general__wrap {
-    margin-top: 30px;
-    .account__container {
-      display: none;
-    }
+    margin-top: 20px;
+   
   }
 
   .general__usergeneral {
@@ -106,7 +116,8 @@
 
 @media screen and (max-width: 350px) {
   .general__wrap {
-    margin-top: 10px;
+    margin-top: 0px;
+
   }
 
   .general__usergeneral {

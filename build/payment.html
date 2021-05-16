@@ -27,7 +27,7 @@
   </head>
 
   <body>
-    <header class="p-5 fixed-top">
+    <header class="state__header">
       <a class="navbar-brand" href="index.html">
         <img src="/image/logo.svg" alt="logo" class="img-fluid" />
       </a>
@@ -65,7 +65,13 @@
       </div>
 
       <div class="general__usergeneral">
-        <p class="general__subtitle">Payment details</p>
+         <div class="general__flex-general ">
+          <a href="sidebar.html" class="arrow-back "
+            ><i class="fas fa-arrow-left"></i
+          ></a>
+        <p class="general__title">Payment details</p>
+        </div>
+       
         <form action="" class="mt-5">
           <div class="form-row">
             <div class="col-md-6 mb-3">
@@ -103,7 +109,7 @@
           </div>
         </form>
         <div class="general__flex-general">
-          <p class="general__subtitle mt-5">Payment history</p>
+          <p class="general__title mt-5">Payment history</p>
         </div>
         <div class="payment__table-wrap">
           <table class="table table-hover">

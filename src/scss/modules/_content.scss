@@ -205,6 +205,9 @@
     margin-bottom: 20px;
     width: 100%;
 
+    .card-margined{
+      margin-right: 30px;
+    }
     .card-body {
       margin-top: 20px;
 
@@ -320,6 +323,9 @@
   }
 
   .content__card {
+     .card-margined{
+      margin-right: 0px;
+    }
     .card {
       margin-bottom: 50px;
     }

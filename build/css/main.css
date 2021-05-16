@@ -2035,6 +2035,8 @@ body {
   margin-top: 20px;
   margin-bottom: 20px;
   width: 100%; }
+  .content__card .card-margined {
+    margin-right: 30px; }
   .content__card .card-body {
     margin-top: 20px; }
     .content__card .card-body .card-title {
@@ -2114,6 +2116,8 @@ body {
     margin-top: 40px; }
   .content__pagination .pag-hidden {
     display: none; }
+  .content__card .card-margined {
+    margin-right: 0px; }
   .content__card .card {
     margin-bottom: 50px; } }
 

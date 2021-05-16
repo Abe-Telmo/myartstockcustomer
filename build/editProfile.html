@@ -36,8 +36,8 @@
         <div class="account__container fixed-top side-bar ">
     <p class="account__title">Account settings</p>
     <ul class="account__lists">
-        <li class="list-item active">
-            <a href="editProfile.html">
+        <li class="list-item ">
+            <a href="editProfile.html" class="active">
                 <span class="list-title">Edit Profile</span>
             </a>
         </li>
@@ -65,9 +65,12 @@
 </div>
       
       <div class="general__usergeneral">
-        <div class="general__flex-general mb-5">
+        <div class="upload__upload-flex mb-5">
            <img src="image/profile.png" alt="">
-           <a href="uploadImg.html">Change profile picture</a>
+           <div class="request__upload">
+          <input type="file" id="files" class="hidden" />
+          <label for="files">Change profile picture</label>
+        </div>
         </div>
        
       <form action="profileState.html">

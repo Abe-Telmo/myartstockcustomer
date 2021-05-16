@@ -26,13 +26,17 @@
     <script src="js/csi.min.js"></script>
   </head>
   <body>
-    <header class="p-5">
+    <header class="state__header">
       <a class="navbar-brand" href="index.html">
         <img src="/image/logo.svg" alt="logo" class="img-fluid" />
       </a>
     </header>
     <!-- wrapper starts here -->
-    <div class="state__wrap">
+    <div class="state__wrap content ">
+      <div class="btn-active">
+         <div data-include="btnModal.html"></div>
+      </div>
+        
       <div class="state__flexed-container">
         <div class="state__img-div">
           <img src="image/profiledp.png" alt="" />
@@ -41,49 +45,232 @@
           <div class="content-flexed">
             <h3>Adeyinka Jokanola</h3>
             <form action="editProfile.html">
-            <button type="submit" class="btn btn-outline-primary edit-btn">
-              Edit profile
-            </button>
+              <button type="submit" class="btn btn-outline-primary edit-btn">
+                Edit profile
+              </button>
             </form>
           </div>
           <p>
             I’m a user experience designer curating better experiences and
             designing digital products that help people live their best lives
           </p>
-          <h4 class="content-interest pt-2">Interests</h4>
+          <h4 class="content-interest">Interests</h4>
           <div class="state__tags">
             <input
               class="btn btn-primary tag-btn"
               type="button"
-              value="Nature"
+              value="Photgraphy"
               disabled
             />
             <input
               class="btn btn-primary tag-btn"
               type="button"
-              value="Outdoor"
+              value="Sound"
               disabled
             />
             <input
               class="btn btn-primary tag-btn"
               type="button"
-              value="Art"
+              value="Voiceovers"
               disabled
             />
-            <a class="tags-link" href="#">Edit tags</a>
+            <input
+              class="btn btn-primary tag-btn"
+              type="button"
+              value="Footages"
+              disabled
+            />
           </div>
         </div>
       </div>
-      <div class="state__mid-content">
-        <a href="" class="active">Contents</a>
-        <a href="">Stats</a>
+      <div class="btn-hidden"><div data-include="btnModal.html" ></div></div>
+      
+      <ul
+        class="nav nav-pills mb-3 state__mid-content mb-5"
+        id="pills-tab"
+        role="tablist"
+      >
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link active"
+            id="pills-home-tab"
+            data-toggle="pill"
+            href="#pills-home"
+            role="tab"
+            aria-controls="pills-home"
+            aria-selected="true"
+            >Contents(42)</a
+          >
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link"
+            id="pills-profile-tab"
+            data-toggle="pill"
+            href="#pills-profile"
+            role="tab"
+            aria-controls="pills-profile"
+            aria-selected="false"
+            >Requests(2)</a
+          >
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link"
+            id="pills-contact-tab"
+            data-toggle="pill"
+            href="#pills-contact"
+            role="tab"
+            aria-controls="pills-contact"
+            aria-selected="false"
+            >Stats</a
+          >
+        </li>
+      </ul>
+      
+      <div class="tab-content" id="pills-tabContent">
+        <div
+          class="tab-pane fade show active"
+          id="pills-home"
+          role="tabpanel"
+          aria-labelledby="pills-home-tab"
+        >
+        <!-- put tab -->
+        <div class="content__pagination ">
+        <nav aria-label="..." class="flexed-nav">
+          <ul class="pagination pagination-lg">
+            <li class="page-item active" aria-current="page">
+              <span class="page-link">
+                25
+                <span class="sr-only">(current)</span>
+              </span>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">50</a></li>
+            <li class="page-item"><a class="page-link" href="#">100</a></li>
+          </ul>
+          <p class="pag-hidden">items per page</p>
+        </nav>
+
+        <select name="interest" id="interest" class="select hide-pag-select">
+          <option value="new">New to old</option>
+          <option value="old">Old to new</option>
+        </select>
+        <nav aria-label="Page navigation example" class="flexed-nav">
+          <p class="pr-5 pag-hidden">1 - 25 of 59</p>
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="page-item " role="presentation">
+              <a
+                class="page-link"
+                id="content-tab"
+                data-toggle="tab"
+                href="#content"
+                role="tab"
+                aria-controls="content"
+                aria-selected="true"
+                ><span aria-hidden="true">&laquo;</span></a>
+            </li>
+            <li class="page-item" role="presentation">
+              <a
+                class="page-link"
+                id="sound-tab"
+                data-toggle="tab"
+                href="#sound"
+                role="tab"
+                aria-controls="sound"
+                aria-selected="false"
+                >1</a>
+            </li>
+            <li class="page-item" role="presentation">
+              <a
+                class="page-link"
+                id="footages-tab"
+                data-toggle="tab"
+                href="#footages"
+                role="tab"
+                aria-controls="footages"
+                aria-selected="false"
+                >2</a>
+            </li>
+            <li class="page-item">
+      <a class="page-link" href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+          </ul>
+        </nav>
       </div>
-      <div class="state__container">
-            <div class="state__image ">
-    <img src="./image/lf20_xEak8Q.json].png" alt="" />
-    <h3>No content available yet</h3>
-   <a href="uploadContent.html"  class="general__btn" role="button" aria-pressed="true">Upload content</a>
-  </div>
+          <div class="content__container">
+            <div class="tab-content" id="myTabContent">
+              <div
+                class="tab-pane fade show active"
+                id="content"
+                role="tabpanel"
+                aria-labelledby="content-tab"
+              >
+               <div class="state__image hidden">
+              <img src="./image/lf20_xEak8Q.json].png" alt="" />
+              <h3>No content available yet</h3>
+              <a
+                href="uploadContent.html"
+                class="general__btn"
+                role="button"
+                aria-pressed="true"
+                >Upload content</a
+              >
+            </div>
+                <div data-include="content.html"></div>
+                <div data-include="pictureModal.html"></div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="sound"
+                role="tabpanel"
+                aria-labelledby="sound-tab"
+              >
+                <div data-include="sound.html"></div>
+                <div data-include="soundModal.html"></div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="footages"
+                role="tabpanel"
+                aria-labelledby="footages-tab"
+              >
+                <div data-include="footages.html"></div>
+                 <div data-include="footageModal.html"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="pills-profile"
+          role="tabpanel"
+          aria-labelledby="pills-profile-tab"
+        >
+          <div class="content__container">
+            <div class="state__image hidden">
+              <img src="./image/lf20_xEak8Q.json].png" alt="" />
+              <h3>No request available yet</h3>
+              <!-- <a href="uploadContent.html"  class="general__btn" role="button" aria-pressed="true">Upload content</a> -->
+            </div>
+            <div data-include="requests.html"></div>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="pills-contact"
+          role="tabpanel"
+          aria-labelledby="pills-contact-tab"
+        >
+          <div class="content__container">
+            <div class="state__image hidden">
+              <img src="./image/lf20_xEak8Q.json].png" alt="" />
+              <h3>No stats available yet</h3>
+            </div>
+            <div data-include="stats.html"></div>
+          </div>
+        </div>
       </div>
     </div>
 

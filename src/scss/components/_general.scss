@@ -92,29 +92,33 @@
   .general__wrap {
     margin-top: 150px;
 
-      .side-bar{
-      display: none;
-    }
+  
   }
   .general__usergeneral {
     width: 100%;
     padding-right: 50px;
     padding-left: 50px;
     
-    .arrow-back{
-      display: block;
-    }
+   
   }
 }
 
 @media screen and (max-width: 550px) {
   .general__wrap {
     margin-top: 120px;
+
+        .side-bar {
+          display: none;
+        }
    
   }
 
   .general__usergeneral {
     padding: 0 20px;
+
+     .arrow-back {
+       display: block;
+     }
   }
 }
 

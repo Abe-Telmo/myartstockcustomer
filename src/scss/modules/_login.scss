@@ -21,7 +21,7 @@
     width: 40%;
     max-width: 650px;
     height: 100vh;
-    background-image: url('../../image/login.jpg');
+    background-image: url('../../image/login.png');
 
     &-overlay {
       width: 100%;
@@ -97,8 +97,11 @@
     line-height: 25px;
     width: 100%;
     border: none;
-    color: #ffffff;
+    color: #fff !important;
     margin-top: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   &__form {
@@ -146,6 +149,16 @@
 
   .login__form-content {
     width: 100%;
+
+     .hidden {
+       display:
+         flex;
+     }
+
+     .active {
+       display:
+         none;
+     }
   }
 
   .login__logo {
@@ -153,4 +166,5 @@
     top: 30px;
     width: 120px;
   }
+ 
 }

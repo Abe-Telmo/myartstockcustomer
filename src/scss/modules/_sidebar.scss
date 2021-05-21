@@ -3,13 +3,14 @@
     width: 250px;
     height: 100%;
     padding: 20px 10px;
-    margin-top: 100px;
-    padding-top: 30px;
+    margin-top: 60px;
+    padding-top: 50px;
     margin-left: 0px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     z-index: 0;
   }
 
+  
   &__title {
     color: #222222e5;
     font-weight: 500;
@@ -27,10 +28,23 @@
 
     .list-item a {
       width: 100%;
-      display: block;
-      padding: 10px 20px;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      padding: 10px 10px;
     }
 
+    .list-item .list-icon{
+      margin-right: 20px;
+    }
+
+    .list-item .list-title{
+      color: #142367;
+    }
+
+    .list-item .list-icon .fas{
+      color: #142367;
+    }
     .list-item a:hover {
       background-color: #f3f2fa;
     }
@@ -51,64 +65,18 @@
 
 
 @media screen and (max-width: 768px) {
-  // .account__container {
-  //   height: 100%;
-  //   width: 100%;
-  //   padding: 10px 0px;
-  //   position: relative;
-  //   margin-top: 150px;
-  //   margin-left: 0px;
-  //   background: #fff;
-  //    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
-  // }
-
-  // .account__title{
-  //   font-size: 35px;
-  //   color: #142367;
-  // }
-
-  // .account__lists {
-  //   margin-top: 10px;
-    
-
-  //   .list-item {
-  //     margin-top: 5px;
-  //     margin-bottom: 20px;
-  //     line-height: 0px;
-  //     display: flex;
-  //     align-items: center;
-  //     justify-content: space-between;
-  //   }
-
-  //   .list-item a {
-  //     display: flex;
-  //     justify-content: space-between;
-  //     align-items: center;
-  //     width: 100%;
-  //     padding:40px 20px;
-  //     color: #142367;
-  //     font-weight: 500;
-  //     font-size: 30px;
-  //     margin-bottom: 0px;
-
-  //     .fa-chevron-right{
-  //       font-size: 22px;
-  //     }
-  //   }
-   
-  
-  // }
   .account__container {
     height: 100%;
     width: 80px;
     padding: 10px 0px;
-    top: 12%;
+    top: 9.5%;
     margin-top: 0px;
     margin-left: 0px;
     background: #fff;
     overflow: hidden;
     z-index: 50;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  
   }
 
   .account__title {
@@ -124,7 +92,6 @@
 
     .list-item {
       margin-top: 25px;
-      padding: 10px 20px;
       line-height: 40px;
     }
 
@@ -133,6 +100,10 @@
       font-weight: 500;
       font-size: 30px;
       margin-bottom: 10px;
+       padding: 10px 20px;
+       display: flex;
+       justify-content: start;
+       align-items: center;
     }
 
     .list-item a .list-icon {
@@ -146,12 +117,14 @@
       align-items: center;
     }
 
-    .list-item-link .list-icon .far,
-    .list-item-link .list-icon .fas {
+    .list-item a .list-icon img{
+      width: 30px;
+    }
+    .list-item a .list-icon .fas {
       font-size: 30px;
     }
 
-    .list-item-link .list-title {
+    .list-item a .list-title {
       position: relative;
       height: 60px;
       font-size: 30px;
@@ -197,38 +170,98 @@
 
 @media screen and (max-width: 560px) {
   .account__container {
-    padding: 0px 10px;
-    margin-top: 30px;
+    height: 100%;
+    width: 100%;
+    padding: 10px 0px;
+    position: relative;
+    margin-top: 0px;
+    margin-left: 0px;
+    background: #fff;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
   }
 
-  .account__title{
-    font-size: 30px;
-  }
+   .account__title {
+     display: block;
+      color: #142367;
+      font-weight: 500;
+      font-size: 30px;
+      padding: 10px;
+   }
 
   .account__lists {
+    margin-top: 15px;
 
-      .list-item a {
-      padding:20px 20px;
-
-      .fa-chevron-right{
-        font-size: 22px;
-      }
+    .list-item {
+      margin-top: 5px;
+      margin-bottom: 10px;
+      line-height: 0px;
+     
     }
-    
+
+    .list-item a{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 20px;
+    }
+
     .list-item .fas {
-      font-size: 16px;
+      font-size: 20px;
     }
 
+    .list-item-first {
+      margin-top: 0;
+    }
+
+    .list-item-link {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      width: fit-content;
+      height: 40px;
+      color: #142367;
+      font-weight: 500;
+      font-size: 30px;
+      margin-bottom: 0px;
+      padding: 0px 0px;
+    }
+
+
+     .list-item a .list-icon {
+       position: relative;
+       width: 80px;
+       height: 0px;
+       padding: 0px;
+       margin-right: 0px;
+       display: flex;
+       justify-content: start;
+       align-items: center;
+     }
+
+    .list-item-link .list-icon img{
+      width: 20px;
+    }
+    .list-item-link .list-icon .fas {
+      font-size: 20px;
+    }
 
     .list-item a .list-title {
-      font-size: 22px;
+      position: relative;
+      display: block;
+      height: 0px;
+      font-size: 25px;
+      white-space: nowrap;
     }
+  }
+
+  .toggle{
+    display: none;
   }
 }
 
 @media screen and (max-width: 376px) {
     .account__container {
-    padding: 0px 10px;
+    padding: 0px 20px;
     margin-top: 20px;
   }
 
@@ -243,11 +276,19 @@
     }
 
     .list-item a {
-      padding: 20px 0px;
+      padding: 5px 0px;
     }
+
      .list-item a .fas {
       font-size: 14px;
     }
+
+    .list-item a .list-icon .fas{
+      font-size: 20px;
+    }
+     .list-item a .list-icon img{
+       width: 20px;
+     }
 
     .list-item a .list-title {
       font-size: 16px;

@@ -4,9 +4,15 @@
   }
 
   &__fixed-header{
-    position: fixed;
+    position: relative;
     top: 20px;
     padding: 20px 0 5px 20px;
+    display: flex;
+    justify-content: space-between;
+
+    .dropdown{
+      position: relative;
+    }
   }
 
   &__wrap {

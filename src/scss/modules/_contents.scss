@@ -1,0 +1,139 @@
+.contents{
+    &__search-flex{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    &__search-div {
+    height: 50px;
+    max-width: 748px;
+    width: 100%;
+    position: relative;
+
+    input{
+        width:100%;
+        height: 100%;
+        padding: 0 30px;
+        border-radius: 3px;
+        border-color: rgba(48, 72, 181, 0.2);
+        outline: none;
+    }
+
+    input::placeholder{
+        font-size: 12px;
+        font-weight: 400;
+        color: #3048B5;
+
+    }
+    .fa-search{
+        position: absolute;
+        top: 50%;
+        right:  17.7px;
+        transform: translateY(-50%);
+        color: #3048B5;
+    }
+}
+
+ &__img-wrap {
+     display: flex;
+     justify-content: flex-start;
+     flex-wrap: wrap;
+     margin-top: 40px;
+
+     a{
+         margin: 15px;
+         margin-bottom: 20px;
+
+         .sub-img{
+             height: 160px;
+             width: 230px;
+             border-radius: 16px;
+
+         }
+         .content-img-text{
+             color: #3048B5;
+             margin-top: 10px;
+         }
+
+         p{
+             font-size: 18px;
+             font-weight: 500;
+             line-height: 21px;
+         }
+     }
+ }
+
+ &__sub-category{
+     margin-bottom: 30px;
+     display: flex;
+     justify-content: flex-start;
+
+     a{
+          color: #3048B5;
+          font-size: 12px;
+          font-weight: 400;
+         
+     }
+
+     .fas{
+         padding: 0 15.5px;
+         color: #3048B5;
+         font-weight: 700;
+     }
+ }
+}
+
+
+@media screen and (max-width:1026px){
+      .contents__search-div {
+          height: 50px;
+          width: 400px;
+      }
+
+      .contents__img-wrap{
+          a{
+              margin: 15px;
+
+          }
+      }
+}
+
+@media screen and (max-width:768px) {
+    .contents__search-div {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .contents__img-wrap {
+        a {
+            margin: 15px;
+
+            img{
+                width: 250px;
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width:550px) {
+    .contents__search-div {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .contents__img-wrap {
+        a {
+
+            margin:20px auto;
+
+
+            img {
+                width: 300px;
+            }
+
+        }
+    }
+}

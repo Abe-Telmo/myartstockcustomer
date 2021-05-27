@@ -28,131 +28,86 @@
 
   <body>
     <div data-include="navbar.html"></div>
-    
+
     <div class="general__wrap payment">
       <div class="account__container fixed-top side-bar">
         <p class="account__title">Account settings</p>
-           <ul class="account__lists">
-        <li class="list-item ">
-            <a href="dashboard.html" >
-              <span class="list-icon"><img src="image/dash.svg" alt=""></span>  
-                <span class="list-title">Dashboard</span>
+        <ul class="account__lists">
+          <li class="list-item">
+            <a href="dashboard.html">
+              <span class="list-icon"><img src="image/dash.svg" alt="" /></span>
+              <span class="list-title">Dashboard</span>
             </a>
-        </li>
-        <li class="list-item ">
-            <a href="contents.html">   
-              <span class="list-icon"> <img src="image/pie-chart.svg" alt=""></span>  
-                <span class="list-title">Contents</span>
+          </li>
+          <li class="list-item">
+            <a href="contents.html">
+              <span class="list-icon">
+                <img src="image/pie-chart.svg" alt=""
+              /></span>
+              <span class="list-title">Contents</span>
             </a>
-        </li>
-        <li class="list-item">
-             <a href="users.html">
-               <span class="list-icon"><img src="image/users.svg" alt=""></span>
-                <span class="list-title">Users</span>
+          </li>
+          <li class="list-item">
+            <a href="users.html">
+              <span class="list-icon"
+                ><img src="image/users.svg" alt=""
+              /></span>
+              <span class="list-title">Users</span>
             </a>
-        </li>
-        <li class="list-item">
-             <a href="sales.html" class="active">
-               <span class="list-icon"><img src="image/sales.svg" alt=""></span>
-                <span class="list-title">Sales</span>
+          </li>
+          <li class="list-item">
+            <a href="sales.html" class="active">
+              <span class="list-icon"
+                ><img src="image/sales.svg" alt=""
+              /></span>
+              <span class="list-title">Sales</span>
             </a>
-        </li>
-        <li class="list-item">
-             <a href="profiles.html">
-               <span class="list-icon"><img src="image/Profile.svg" alt=""></span>
-               
-                <span class="list-title">Profiles</span>
+          </li>
+          <li class="list-item">
+            <a href="profiles.html">
+              <span class="list-icon"
+                ><img src="image/Profile.svg" alt=""
+              /></span>
+
+              <span class="list-title">Profiles</span>
             </a>
-        </li>
-         <li class="list-item">
-             <a href="index.html">
-               <span class="list-icon"><i class="fas fa-sign-out-alt"></i></span>
-                <span class="list-title">Logout</span>
+          </li>
+          <li class="list-item">
+            <a href="index.html">
+              <span class="list-icon"><i class="fas fa-sign-out-alt"></i></span>
+              <span class="list-title">Logout</span>
             </a>
-        </li>
-    </ul>
-    <div class="toggle"></div>
+          </li>
+        </ul>
+        <div class="toggle"></div>
       </div>
 
       <div class="general__usergeneral">
-         <div class="general__flex-general ">
-          <a href="sidebar.html" class="arrow-back "
+        <div class="general__flex-general">
+          <a href="sidebar.html" class="arrow-back"
             ><i class="fas fa-arrow-left"></i
           ></a>
-        <p class="general__title">Payment details</p>
+          <p class="general__title">Top selling contributors</p>
         </div>
-       
-        <form action="" class="mt-5">
-          <div class="form-row">
-            <div class="col-md-6 mb-3">
-              <label for="validationDefault01" class="profile__label"
-                >Account name</label
-              >
-              <input
-                type="text"
-                class="form-control profile__input"
-                id="validationDefault01"
-                required
-              />
-            </div>
-            <div class="col-md-6 mb-3">
-              <label for="validationDefault02" class="profile__label"
-                >Account number</label
-              >
-              <input
-                type="text"
-                class="form-control profile__input"
-                id="validationDefault02"
-                required
-              />
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="exampleInputPassword1" class="profile__label"
-              >Bank name</label
-            >
-            <input
-              type="text"
-              class="form-control profile__input"
-              id="exampleInputtext1"
-            />
-          </div>
-        </form>
-        <div class="general__flex-general">
-          <p class="general__title mt-5">Payment history</p>
+        <div class="contents__sub-category">
+          <a href="users.html">Sales</a>
+          <i class="fas fa-chevron-right"></i>
+          <a href="userContributor.html">Top selling contributors</a>
         </div>
-        <div class="payment__table-wrap">
-          <table class="table table-hover">
-            <thead>
-              <tr class="table-head text-center">
-                <th scope="col">payout date</th>
-                <th scope="col">content</th>
-                <th scope="col">amount</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="">
-                <td>September 12, 2020</td>
-                <td>Grace aand Truth</td>
-                <td>NGN 2,000</td>
-              </tr>
-              <tr>
-                <td>September 12, 2020</td>
-                <td>Love and Light</td>
-                <td>NGN 2,000</td>
-              </tr>
-              <tr>
-                <td>September 12, 2020</td>
-                <td>I said what I said</td>
-                <td>NGN 2,000</td>
-              </tr>
-              <tr>
-                <td>September 12, 2020</td>
-                <td>ENDSARS anthem</td>
-                <td>NGN 2,000</td>
-              </tr>
-            </tbody>
-          </table>
+
+        <div class="contents__img-wrap">
+          <a href="salesTopSeller.html">
+            <img src="image/user-customer.png" alt="" />
+            <div class="content-img-text">
+              <p>Top selling contributors</p>
+            </div>
+          </a>
+          <a href="salesOverview.html">
+            <img src="image/user-customer.png" alt="" />
+            <div class="content-img-text">
+              <p>Sales overview</p>
+            </div>
+          </a>
         </div>
       </div>
     </div>

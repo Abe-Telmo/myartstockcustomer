@@ -1,11 +1,13 @@
 .payment {
+  &__self-table-wrap{
+     width: 50% !important;
+  }
+  
   &__table-wrap {
     width: 100%;
     overflow-x: auto;
-     border: 2px solid #d9dbdd;
-     padding: 30px 40px ;
-     margin: 50px 0;
-
+     padding: 10px 40px ;
+     margin: 30px 0;
 
      p{
        font-size: 17px;
@@ -21,10 +23,18 @@
     
     }
 
+    .table th {
+      border-top: hidden !important;
+      border-bottom:2px solid #d9dbdd !important;
+    }
+
+    .table td{
+       border-top: 2px solid #d9dbdd !important;
+    }
+    
     .table th,
     .table td {
       vertical-align: top;
-      border-top: 2px solid #d9dbdd !important;
       padding: 30px 20px;
       font-size: 16px;
     }
@@ -43,6 +53,20 @@
       text-transform: uppercase;
       font-weight: 500;
     }
+
+    .centered-btn{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+    }
   }
 }
+
+@media screen and (max-width:778px) {
+  .payment__self-table-wrap {
+    width: 100% !important;
+  }
+}
+
 

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Art Stock | Home</title>
+    <title>My Art Stock | Purchase</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -27,15 +27,14 @@
   </head>
 
   <body>
-   
-      <div data-include="navbar.html"></div>
+    <div data-include="navbar.html"></div>
     
-    <div class="general__wrap">
+    <div class="general__wrap payment">
       <div class="account__container fixed-top side-bar">
         <p class="account__title">Account settings</p>
-       <ul class="account__lists">
+           <ul class="account__lists">
         <li class="list-item ">
-            <a href="dashboard.html">
+            <a href="dashboard.html" >
               <span class="list-icon"><img src="image/dash.svg" alt=""></span>  
                 <span class="list-title">Dashboard</span>
             </a>
@@ -53,7 +52,7 @@
             </a>
         </li>
         <li class="list-item">
-             <a href="sales.html">
+             <a href="sales.html" >
                <span class="list-icon"><img src="image/sales.svg" alt=""></span>
                 <span class="list-title">Sales</span>
             </a>
@@ -76,36 +75,78 @@
       </div>
 
       <div class="general__usergeneral">
-        <div data-include="createProfileModal.html"></div>
-        <div class="general__flex-general ">
+         <div class="general__flex-general ">
           <a href="sidebar.html" class="arrow-back "
             ><i class="fas fa-arrow-left"></i
           ></a>
-          <p class="general__title">Profiles</p>
-          </div>
-           <div class="contents__img-wrap ">
-        <a href="profileSubAdmin.html" >
-          <img src="image/sub-admin.png" alt="" />
-          <div class="content-img-text">
-            <p>Sub-admin</p>
-          </div>
-        </a>
-        <a href="profileContributor.html" >
-          <img src="image/contributor.png" alt="" />
-          <div class="content-img-text">
-            <p>Contributors</p>
-          </div>
-        </a>
-        <a href="profileCustomer.html" >
-          <img src="image/customer.png" alt="" />
-          <div class="content-img-text">
-            <p>Customers</p>
-          </div>
-        </a>
+        <p class="general__title">Contributor</p>
+        </div>
+        <div class="contents__sub-category">
+                <a href="profiles.html">Profiles</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="profileContributor.html">Contributor</a>
+               
+            </div>
+        
+        <div class="payment__table-wrap">
+          <table class="table table-hover ">
+            <thead>
+              <tr class="table-head text-center">
+                <th scope="col">date created</th>
+                <th scope="col">username</th>
+                <th scope="col">status</th>
+                <th scope="col">actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="">
+                <td>May 18, 2020</td>
+                <td><a href="/">Sub-admin 1</a></td>
+                <td>Active</td>
+                <td>Deactivate</td>
+              </tr>
+              <tr>
+                <td>June 18, 2020</td>
+                <td><a href="/">Sub-admin 2</a></td>
+                <td>Active</td>
+                <td>Deactivate</td>
+              </tr>
+              <tr>
+                 <td>June 18, 2020</td>
+                <td><a href="/">Oluwatobi Babalola</a></td>
+                <td>Active</td>
+                <td>Deactivate</td>
+              </tr>
+              <tr>
+                 <td>August 18, 2020</td>
+                <td><a href="/">Oluwatobi Babalola</a></td>
+                <td>Active</td>
+                <td>Deactivate</td>
+              </tr>
+              <tr>
+                 <td>August 18, 2020</td>
+                <td><a href="/">Oluwatobi Babalola</a></td>
+                <td>Active</td>
+                <td>Deactivate</td>
+              </tr>
+              <tr>
+                 <td>August 18, 2020</td>
+                <td><a href="/">Oluwatobi Babalola</a></td>
+                <td>Active</td>
+                <td>Deactivate</td>
+              </tr>
+              <tr>
+                 <td>September 18, 2020</td>
+                <td><a href="/">Oluwatobi Babalola</a></td>
+                <td>Active</td>
+                <td>Deactivate</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
-      
     </div>
-    </div>
+
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/tether.min.js"></script>

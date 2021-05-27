@@ -30,7 +30,7 @@
    
       <div data-include="navbar.html"></div>
     
-    <div class="general__wrap deactivate ">
+    <div class="general__wrap">
       <div class="account__container fixed-top side-bar">
         <p class="account__title">Account settings</p>
        <ul class="account__lists">
@@ -76,46 +76,37 @@
       </div>
 
       <div class="general__usergeneral">
+        <div data-include="uploadCategory.html"></div>
         <div class="general__flex-general ">
           <a href="sidebar.html" class="arrow-back "
             ><i class="fas fa-arrow-left"></i
           ></a>
-          <p class="general__title">Deactivate account</p>
-          <div class="dropdown">
-  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Dropdown link
-  </a>
-
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-    <a class="dropdown-item" href="#">Action</a>
-    <a class="dropdown-item" href="#">Another action</a>
-    <a class="dropdown-item" href="#">Something else here</a>
-  </div>
-</div>
-        </div>
-        
-        <small
-          ><span class="warning">Warning: </span> Deactivating your account deteletes all your
-          uploads, collections and stats</small
-        >
-        <form action="index.html">
-        <div class="form-group mt-5">
-          <label for="exampleInputText1" class="profile__label "
-            >Enter password</label
-          >
-          <input
-            type="text"
-            class="form-control profile__input"
-            id="exampleInputText1"
-          />
-        </div>
-        <button type="submit" class="general__btn">Deactivate account</button>
-        </form>
-        <div class="deactivate__colored-div">
-            <p class="deactivate-name">Deleting Contents</p>
-            <p class="deactivate-text">Deactivating your account removes all your content from MyArtStock. However, the MyArtStock license is irrevocable, so copies of contents that were downloaded before deactivation may still be used.</p>
-        </div>
+          <p class="general__title">Profiles</p>
+          </div>
+           
+          
+           <div class="contents__img-wrap ">
+        <a href="subAdmin.html" >
+          <img src="image/sub-admin.png" alt="" />
+          <div class="content-img-text">
+            <p>Sub-admin</p>
+          </div>
+        </a>
+        <a href="subAdmin.html" >
+          <img src="image/contributor.png" alt="" />
+          <div class="content-img-text">
+            <p>Contributors</p>
+          </div>
+        </a>
+        <a href="subAdmin.html" >
+          <img src="image/customer.png" alt="" />
+          <div class="content-img-text">
+            <p>Customers</p>
+          </div>
+        </a>
       </div>
+      
+    </div>
     </div>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

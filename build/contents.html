@@ -27,123 +27,140 @@
   </head>
 
   <body>
- 
-      <div data-include="navbar.html"></div>
-    
-    <div class="general__wrap contents ">
+    <div data-include="navbar.html"></div>
+
+    <div class="general__wrap contents">
       <div class="account__container fixed-top side-bar">
         <p class="account__title">Account settings</p>
-       <ul class="account__lists">
-        <li class="list-item ">
-            <a href="dashboard.html" >
-              <span class="list-icon"><img src="image/dash.svg" alt=""></span>  
-                <span class="list-title">Dashboard</span>
+        <ul class="account__lists">
+          <li class="list-item">
+            <a href="dashboard.html">
+              <span class="list-icon"><img src="image/dash.svg" alt="" /></span>
+              <span class="list-title">Dashboard</span>
             </a>
-        </li>
-        <li class="list-item ">
-            <a href="contents.html" class="active">   
-              <span class="list-icon"> <img src="image/pie-chart.svg" alt=""></span>  
-                <span class="list-title">Contents</span>
+          </li>
+          <li class="list-item">
+            <a href="contents.html" class="active">
+              <span class="list-icon">
+                <img src="image/pie-chart.svg" alt=""
+              /></span>
+              <span class="list-title">Contents</span>
             </a>
-        </li>
-        <li class="list-item">
-             <a href="users.html">
-               <span class="list-icon"><img src="image/users.svg" alt=""></span>
-                <span class="list-title">Users</span>
+          </li>
+          <li class="list-item">
+            <a href="users.html">
+              <span class="list-icon"
+                ><img src="image/users.svg" alt=""
+              /></span>
+              <span class="list-title">Users</span>
             </a>
-        </li>
-        <li class="list-item">
-             <a href="sales.html">
-               <span class="list-icon"><img src="image/sales.svg" alt=""></span>
-                <span class="list-title">Sales</span>
+          </li>
+          <li class="list-item">
+            <a href="sales.html">
+              <span class="list-icon"
+                ><img src="image/sales.svg" alt=""
+              /></span>
+              <span class="list-title">Sales</span>
             </a>
-        </li>
-        <li class="list-item">
-             <a href="profiles.html" >
-               <span class="list-icon"><img src="image/Profile.svg" alt=""></span>
-               
-                <span class="list-title">Profiles</span>
+          </li>
+          <li class="list-item">
+            <a href="profiles.html">
+              <span class="list-icon"
+                ><img src="image/Profile.svg" alt=""
+              /></span>
+
+              <span class="list-title">Profiles</span>
             </a>
-        </li>
-         <li class="list-item">
-             <a href="index.html">
-               <span class="list-icon"><i class="fas fa-sign-out-alt"></i></span>
-                <span class="list-title">Logout</span>
+          </li>
+          <li class="list-item">
+            <a href="index.html">
+              <span class="list-icon"><i class="fas fa-sign-out-alt"></i></span>
+              <span class="list-title">Logout</span>
             </a>
-        </li>
-    </ul>
-    <div class="toggle"></div>
+          </li>
+        </ul>
+        <div class="toggle"></div>
       </div>
 
-      <div class="general__usergeneral ">
-        <div class="general__flex-general ">
-          <a href="sidebar.html" class="arrow-back "
+      <div class="general__usergeneral">
+        <div class="general__flex-general">
+          <a href="sidebar.html" class="arrow-back"
             ><i class="fas fa-arrow-left"></i
           ></a>
           <p class="general__title">Categories</p>
         </div>
         <div class="contents__search-flex">
           <div class="contents__search-div">
-          <i class="fas fa-search"></i>
-          <input class="input" type="text" placeholder="Search content categories here">
+            <i class="fas fa-search"></i>
+            <input
+              class="input"
+              type="text"
+              placeholder="Search content categories here"
+            />
+          </div>
+          <div data-include="uploadCategory.html"></div>
         </div>
-        <div data-include="uploadCategory.html"></div>
+        <div class="state__image hidden">
+          <img src="./image/lf20_xEak8Q.json].png" alt="" />
+          <h3>No content available yet</h3>
+          <p>
+            To add your first content, you have to create a category for it. A
+            category is a group of similar contents. Click button below to
+            create one.
+          </p>
+          <a
+            href="uploadContent.html"
+            class="general__btn"
+            role="button"
+            aria-pressed="true"
+            >Add New Category</a
+          >
         </div>
-        
-        <div class="contents__img-wrap ">
-        <a href="photography.html" >
-          <img src="image/photo.png" alt="" />
-          <div class="content-img-text">
-            <p>Photography</p>
-            <small>10,002 files</small>
-          </div>
-        </a>
-        <a href="https://myartstock.herokuapp.com/photo-detail.html" >
-          <img src="image/voice.png" alt="" />
-          <div class="content-img-text">
-            <p>Voiceovers</p>
-            <small>10,002 files</small>
-          </div>
-        </a>
-        <a href="https://myartstock.herokuapp.com/photo-detail.html" >
-          <img src="image/sound.png" alt="" />
-          <div class="content-img-text">
-            <p>Sounds</p>
-            <small>10,002 files</small>
-          </div>
-        </a>
-        <a href="footages.html" >
-          <img src="image/footage.png" alt="" />
-          <div class="content-img-text">
-            <p>Footages</p>
-            <small>10,002 files</small>
-          </div>
-        </a>
-        <a href="frames.html" >
-          <img src="image/frame.png" alt="" />
-          <div class="content-img-text">
-            <p>Frames</p>
-            <small>10,002 files</small>
-          </div>
-        </a>
-        
-        <a href="paints.html" >
-          <img src="image/paint.png" alt="" />
-          <div class="content-img-text">
-            <p>Paints</p>
-            <small>10,002 files</small>
-          </div>
-        </a>
-        
-      </div>
-    
-    
-  
- 
-        
-        
-      
-        
+        <div class="contents__img-wrap">
+          <a href="photography.html">
+            <img src="image/photo.png" alt="" />
+            <div class="content-img-text">
+              <p>Photography</p>
+              <small>10,002 files</small>
+            </div>
+          </a>
+          <a href="https://myartstock.herokuapp.com/photo-detail.html">
+            <img src="image/voice.png" alt="" />
+            <div class="content-img-text">
+              <p>Voiceovers</p>
+              <small>10,002 files</small>
+            </div>
+          </a>
+          <a href="soundCategory.html">
+            <img src="image/sound.png" alt="" />
+            <div class="content-img-text">
+              <p>Sounds</p>
+              <small>10,002 files</small>
+            </div>
+          </a>
+          <a href="footages.html">
+            <img src="image/footage.png" alt="" />
+            <div class="content-img-text">
+              <p>Footages</p>
+              <small>10,002 files</small>
+            </div>
+          </a>
+          <a href="frames.html">
+            <img src="image/frame.png" alt="" />
+            <div class="content-img-text">
+              <p>Frames</p>
+              <small>10,002 files</small>
+            </div>
+          </a>
+
+          <a href="paints.html">
+            <img src="image/paint.png" alt="" />
+            <div class="content-img-text">
+              <p>Paints</p>
+              <small>10,002 files</small>
+            </div>
+          </a>
+        </div>
       </div>
     </div>
     <script src="js/jquery.min.js"></script>

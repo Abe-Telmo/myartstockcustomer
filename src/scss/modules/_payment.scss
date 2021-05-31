@@ -1,41 +1,54 @@
 .payment {
-  &__self-table-wrap{
-     width: 50% !important;
+  &__self-table-wrap {
+    width: 50% !important;
   }
-  
+
   &__table-wrap {
     width: 100%;
     overflow-x: auto;
-     padding: 10px 40px ;
-     margin: 30px 0;
+    padding: 10px 0px;
+    margin: 20px 0;
 
-     p{
-       font-size: 17px;
-       font-weight: 700;
-       line-height: 20px;
+    p {
+      font-size: 17px;
+      font-weight: 700;
+      line-height: 20px;
       text-transform: uppercase;
-      padding-bottom: 30px;
-
-     }
+      padding-bottom: 20px;
+    }
     .table-hover {
       white-space: nowrap;
       width: 100%;
-    
     }
 
     .table th {
       border-top: hidden !important;
-      border-bottom:2px solid #d9dbdd !important;
+      border-bottom: 1px solid #e3e8ec !important;
     }
 
-    .table td{
-       border-top: 2px solid #d9dbdd !important;
+    .table td {
+      border-top: 1px solid #e3e8ec !important;
     }
-    
+
+    .empty-th{
+      padding-right: 50px !important;
+   
+    }
+    .td-img{
+      position: relative;
+
+    }
+
+    img {
+      height: 40px;
+      width: 40px;
+      position: absolute;
+      top:10px;
+    }
     .table th,
     .table td {
       vertical-align: top;
-      padding: 30px 20px;
+      padding: 20px 20px;
       font-size: 16px;
     }
 
@@ -45,16 +58,16 @@
 
     .table tbody tr:hover td,
     .table tbody tr:hover th {
-      background-color: #E5E5E5 !important;
+      background-color: #fbfbfb !important;
     }
 
-     .table-head {
+    .table-head {
       text-align: left !important;
       text-transform: uppercase;
       font-weight: 500;
     }
 
-    .centered-btn{
+    .centered-btn {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -63,10 +76,8 @@
   }
 }
 
-@media screen and (max-width:778px) {
+@media screen and (max-width: 778px) {
   .payment__self-table-wrap {
     width: 100% !important;
   }
 }
-
-

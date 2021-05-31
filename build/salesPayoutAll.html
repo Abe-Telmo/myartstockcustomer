@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Art Stock | Home</title>
+    <title>My Art Stock | Purchase</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -29,7 +29,7 @@
   <body>
     <div data-include="navbar.html"></div>
 
-    <div class="general__wrap contents">
+    <div class="general__wrap payment">
       <div class="account__container fixed-top side-bar">
         <p class="account__title">Account settings</p>
         <ul class="account__lists">
@@ -40,7 +40,7 @@
             </a>
           </li>
           <li class="list-item">
-            <a href="contents.html" class="active">
+            <a href="contents.html">
               <span class="list-icon">
                 <img src="image/pie-chart.svg" alt=""
               /></span>
@@ -56,7 +56,7 @@
             </a>
           </li>
           <li class="list-item">
-            <a href="sales.html">
+            <a href="sales.html" class="active">
               <span class="list-icon"
                 ><img src="image/sales.svg" alt=""
               /></span>
@@ -80,60 +80,6 @@
           </li>
         </ul>
         <div class="toggle"></div>
-      </div>
-
-      <div class="general__usergeneral">
-        <div class="general__flex-general">
-          <a href="sidebar.html" class="arrow-back"
-            ><i class="fas fa-arrow-left"></i
-          ></a>
-          <p class="general__title">Sub-categories</p>
-        </div>
-        <div class="contents__sub-category">
-          <a href="contents.html">Category</a>
-          <i class="fas fa-chevron-right"></i>
-          <a href="footages.html">Footages</a>
-          <i class="fas fa-chevron-right"></i>
-          <a href="subFootage.html">Technologies</a>
-        </div>
-        <div class="contents__search-flex">
-          <div class="contents__search-div">
-            <i class="fas fa-search"></i>
-            <input
-              class="input"
-              type="text"
-              placeholder="Search content sub-categories here"
-            />
-          </div>
-          <div data-include="newFootageModal.html"></div>
-        </div>
-
-        <div class="contents__img-wrap">
-          <a href="">
-            <img class="sub-img" src="image/photo.png" alt="" />
-          </a>
-          <a href="">
-            <img class="sub-img" src="image/voice.png" alt="" />
-          </a>
-          <a href="">
-            <img class="sub-img" src="image/sound.png" alt="" />
-          </a>
-          <a href="">
-            <img class="sub-img" src="image/sound1.png" alt="" />
-          </a>
-          <a href="">
-            <img class="sub-img" src="image/footage.png" alt="" />
-          </a>
-          <a href="">
-            <img class="sub-img" src="image/frame.png" alt="" />
-          </a>
-          <a href="">
-            <img class="sub-img" src="image/sound2.png" alt="" />
-          </a>
-          <a href="">
-            <img class="sub-img" src="image/sound3.png" alt="" />
-          </a>
-        </div>
       </div>
       <div class="content__pagination">
         <nav aria-label="..." class="flexed-nav">
@@ -209,7 +155,112 @@
           </ul>
         </nav>
       </div>
-    </div>
+      <div class="general__usergeneral">
+         <div class="general__dashboard-flex">
+          <div class="general__flex-general">
+            <a href="sidebar.html" class="arrow-back"
+              ><i class="fas fa-arrow-left"></i
+            ></a>
+            <p class="general__title">Sales</p>
+          </div>
+          <select name="interest" id="interest" class="select hide-pag-select">
+            <option value="new">Jan 01, 2020 - Dec 31, 2020</option>
+            <option value="old">Jan 01, 2020 - Dec 31, 2020</option>
+          </select>
+        </div>
+        <div class="tab-content" id="pills-tabContent">
+        <div class="contents__sub-category">
+          <a href="sales.html">Sales</a>
+          <i class="fas fa-chevron-right"></i>
+          <a href="salesOverview.html">Payout</a>
+        </div>
+        </div>
+        
+           <div class="payment__table-wrap">
+          <p>Contributors</p>
+          <table class="table table-hover">
+            <thead>
+              <tr class="table-head ">
+                <th scope="col">PAYOUT DATE</th>
+                <th scope="col">CONTENT</th>
+                <th scope="col">CONTRIBUTOR</th>
+                <th scope="col">AMOUNT</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="">
+               <td>May 18, 2020</td>
+                <td>ENDSARS Anthem</td>
+                 <td>Jokanola Adeyinka</td>
+                <td>NGN 2,000</td>
+              </tr>
+              <tr>
+                  <td>May 18, 2020</td>
+                <td>ENDSARS Anthem</td>
+                 <td>Jokanola Adeyinka</td>
+                <td>NGN 2,000</td>
+              </tr>
+              <tr>
+                 <td>May 18, 2020</td>
+                <td>ENDSARS Anthem</td>
+                 <td>Jokanola Adeyinka</td>
+                <td>NGN 2,000</td>
+              </tr>
+                 <tr>
+                 <td>May 18, 2020</td>
+                <td>ENDSARS Anthem</td>
+                 <td>Jokanola Adeyinka</td>
+                <td>NGN 2,000</td>
+              </tr>
+                <tr>
+                 <td>May 18, 2020</td>
+                <td>ENDSARS Anthem</td>
+                 <td>Jokanola Adeyinka</td>
+                <td>NGN 2,000</td>
+              </tr>
+                <tr>
+                 <td>May 18, 2020</td>
+                <td>ENDSARS Anthem</td>
+                 <td>Jokanola Adeyinka</td>
+                <td>NGN 2,000</td>
+              </tr>
+                <tr>
+                 <td>May 18, 2020</td>
+                <td>ENDSARS Anthem</td>
+                 <td>Jokanola Adeyinka</td>
+                <td>NGN 2,000</td>
+              </tr>
+                <tr>
+                 <td>May 18, 2020</td>
+                <td>ENDSARS Anthem</td>
+                 <td>Jokanola Adeyinka</td>
+                <td>NGN 2,000</td>
+              </tr>
+                <tr>
+                 <td>May 18, 2020</td>
+                <td>ENDSARS Anthem</td>
+                 <td>Jokanola Adeyinka</td>
+                <td>NGN 2,000</td>
+              </tr>
+                <tr>
+                 <td>May 18, 2020</td>
+                <td>ENDSARS Anthem</td>
+                 <td>Jokanola Adeyinka</td>
+                <td>NGN 2,000</td>
+              </tr>
+                <tr>
+                 <td>May 18, 2020</td>
+                <td>ENDSARS Anthem</td>
+                 <td>Jokanola Adeyinka</td>
+                <td>NGN 2,000</td>
+              </tr>
+            </tbody>
+          </table>
+         
+        </div>
+      </div>
+      </div>
+
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/tether.min.js"></script>

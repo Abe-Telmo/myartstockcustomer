@@ -87,6 +87,10 @@ function sound(cb) {
   src(`${origin}/sound/**/**`).pipe(dest(`${destination}/sound`))
   cb()
 }
+function video(cb) {
+  src(`${origin}/video/**/**`).pipe(dest(`${destination}/video`))
+  cb()
+}
 function icons(cb) {
   src(`${origin}/icons/**/*.svg`).pipe(dest(`${destination}/icons`))
   cb()
@@ -129,7 +133,8 @@ function watcher(cb) {
     watch(`${origin}/scss/**/*.scss`).on('change', series(scss, browserSync.reload) )
   watch(`${origin}/js/**/*.js`).on('change', series(html, browserSync.reload))
   watch(`${origin}/sound/**/**`).on('change', series(html, browserSync.reload))
+  watch(`${origin}/video/**/**`).on('change', series(html, browserSync.reload))
   cb()
 }
 
-exports.default = series(clean, parallel(html, php, icons,image, scss, css, js,sound),server, watcher)
+exports.default = series(clean, parallel(html, php, icons,image, scss, css, js,sound, video),server, watcher)

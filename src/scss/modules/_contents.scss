@@ -124,8 +124,39 @@
     }
   }
 
+  &__modal-drop{
+     #modal-drop {
+       width: 100%;
+       margin-bottom: 10px;
+     }
+
+      .my-form {
+        border: 2px dashed #3075b5;
+        border-radius: 10px;
+        height: 140px;
+        padding: 0px 20px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+
+        .dz-button {
+          display: none !important;
+        }
+
+        span{
+          color: #3048b5;
+        }
+      }
+
+  }
   &__upload-file {
     padding: 100px;
+     #modal-drop .myform {
+       height: 200px !important;
+     }
 
     .upload-title {
       font-size: 24px;
@@ -150,6 +181,10 @@
       align-items: center;
       flex-direction: column;
       text-align: center;
+
+      .dz-button{
+        display: none !important;
+      }
     }
 
     .btn-div{
@@ -207,6 +242,18 @@
       display: none;
     }
   }
+
+  &__sales-modal{
+
+    img{
+      position:  relative !important;
+      height: 100px;
+      width: 120px;
+     
+      
+
+    }
+  }
 }
 
 @media screen and (max-width: 1026px) {
@@ -257,6 +304,10 @@
       padding: 20px 30px;
     }
   }
+
+   .contents__upload-file {
+     padding:100px 50px;
+}
 }
 
 @media screen and (max-width: 550px) {
@@ -274,4 +325,21 @@
       }
     }
   }
+
+     .contents__upload-file {
+       padding: 100px 20px;
+
+       .btn-div{
+         display: flex;
+         justify-content: center;
+         flex-direction: column;
+         align-items: center;
+         margin: 30px 0;
+
+         a {
+           margin-left: 0px;
+           margin: 20px 0;
+         }
+       }
+     }
 }

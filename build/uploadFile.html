@@ -15,6 +15,8 @@
       integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0="
       crossorigin="anonymous"
     />
+    <script src="js/dropzone.js"></script>
+    <link rel="stylesheet" href="/css/dropzone.css" />
     <link rel="stylesheet" href="/css/bootstrap.css" />
     <link rel="stylesheet" href="./css/slick.css" />
     <link rel="stylesheet" href="./css/slick-theme.css" />
@@ -31,17 +33,10 @@
       <p class="upload-title mb-2">Upload file</p>
       <p>Attach the file below</p>
       <div id="drop-area">
-        <form class="my-form">
+        <form class="my-form dropzone" id="my-awesome-dropzone" action="/image">
           <img src="image/fileupload.svg" alt="" />
           <p class="drag-label">Drag file(s) here to upload</p>
           <p>Alternatively, you can select a file by</p>
-          <input
-            type="file"
-            id="fileElem"
-            multiple
-            accept="image/*"
-            onchange="handleFiles(this.files)"
-          />
           <label class="click-label" for="fileElem">Clicking here</label>
         </form>
         <div class="general__left-btn btn-div">
@@ -57,69 +52,5 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/tether.min.js"></script>
     <script src="js/index.js"></script>
-    <script>
-      let dropArea = document
-        .getElementById('drop-area')
-        [('dragenter', 'dragover', 'dragleave', 'drop')].forEach(
-          (eventName) => {
-            dropArea.addEventListener(eventName, preventDefaults, false)
-          }
-        )
-
-      function preventDefaults(e) {
-        e.preventDefault()
-        e.stopPropagation()
-      }
-
-      ['dragenter', 'dragover'].forEach(eventName => {
-  dropArea.addEventListener(eventName, highlight, false)
-})
-
-;['dragleave', 'drop'].forEach(eventName => {
-  dropArea.addEventListener(eventName, unhighlight, false)
-})
-
-function highlight(e) {
-  dropArea.classList.add('highlight')
-}
-
-function unhighlight(e) {
-  dropArea.classList.remove('highlight')
-}
-
-dropArea.addEventListener('drop', handleDrop, false)
-
-function handleDrop(e) {
-  let dt = e.dataTransfer
-  let files = dt.files
-
-  handleFiles(files)
-}
-
-function handleFiles(files) {
-  ([...files]).forEach(uploadFile)
-}
-
-function uploadFile(file) {
-  var url = 'YOUR URL HERE'
-  var xhr = new XMLHttpRequest()
-  var formData = new FormData()
-  xhr.open('POST', url, true)
-
-  xhr.addEventListener('readystatechange', function(e) {
-    if (xhr.readyState == 4 && xhr.status == 200) {
-      // Done. Inform the user
-    }
-    else if (xhr.readyState == 4 && xhr.status != 200) {
-      // Error. Inform the user
-    }
-  })
-
-  formData.append('file', file)
-  xhr.send(formData)
-}
-
-
-    </script>
   </body>
 </html>

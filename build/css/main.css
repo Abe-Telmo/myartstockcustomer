@@ -740,7 +740,7 @@ body {
     display: none;
     padding-right: 20px;
     font-size: 20px;
-    color: #142367; }
+    color: #3048b5; }
 
 .general__dashboard-flex {
   display: flex;
@@ -2000,11 +2000,13 @@ body {
     line-height: 24px; }
   .content__graph .graph-flex {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 50px; }
     .content__graph .graph-flex .graph-flexed-div {
-      height: 465px;
-      width: 500px;
+      height: fit-content;
+      width: 50%;
+      max-width: 500px;
       background-color: #fff;
       padding: 50px; }
 
@@ -2093,6 +2095,10 @@ body {
       justify-content: center;
       align-items: center;
       flex-direction: column; }
+    .content__graph .chart-graph,
+    .content__graph .graph-flex .graph-flexed-div {
+      padding: 20px;
+      margin-bottom: 20px; }
   .content__card .card-body .card-title {
     font-size: 14px;
     line-height: 20px; } }
